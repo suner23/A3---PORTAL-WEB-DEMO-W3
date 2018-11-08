@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Base</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="w3.css">
+	<link rel="stylesheet" type="text/css" href="w3-theme-blue.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header class="w3-bar w3-card" style="background-color:#303030;">
+  <button class="w3-bar-item w3-button w3-xlarge w3-hover-theme w3-hide-large w3-hide-medium" style="color:white;" onclick="openSidebar()" >&#9776;</button>
+  <button class="w3-bar-item w3-button w3-xlarge w3-hover-theme"><i class="fa fa-home" style="color:white;"></i></button>
+  <div class="w3-xlarge w3-mobile">
+	  <a href="#" class="w3-cell w3-bar-item w3-button w3-theme-d3 w3-hide-small">Colors</a>
+	  <a href="#" class="w3-cell w3-bar-item w3-button w3-theme-d2 w3-hide-small">Borders</a>
+	  <a href="#" class="w3-cell w3-bar-item w3-button w3-theme-d1 w3-hide-small">Imatges</a>
+	  <a href="#" class="w3-cell w3-bar-item w3-button w3-theme-d2 w3-hide-small">Panells</a>
+	  <a href="#" class="w3-cell w3-bar-item w3-button w3-theme-d3 w3-hide-small">Paddings</a>
+	  <a href="#" class="w3-cell w3-bar-item w3-button w3-theme-d4 w3-hide-small">Efectes</a>
+	  <a href="#" class="w3-bar-item w3-button w3-theme-d3 w3-hide-small">Butons</a>
+	  <a href="#" class="w3-bar-item w3-button w3-theme-d2 w3-hide-small">LListes</a>
+	  <a href="#" class="w3-bar-item w3-button w3-theme-d1 w3-hide-small">Icones</a>
+	  <a href="#" class="w3-bar-item w3-button w3-theme-d2 w3-hide-small">Progress Bars</a>
+	  <a href="#" class="w3-bar-item w3-button w3-theme-d3 w3-hide-small">Notes</a>
+	  <a href="#" class="w3-bar-item w3-button w3-theme-d4 w3-hide-small">Display</a>
+	</div>
+</header>
+	
+<nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+	<div class="w3-container w3-theme-d2">
+ 		<span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large w3-theme-action">x</span>
+	</div>
+	<div class="w3-bar w3-black w3-large">
+	  <a href="#" class="w3-bar-item w3-button w3-theme-d3 w3-hide-large">Colors</a>
+	  <a href="#" class="w3-bar-item w3-button w3-theme-d2 w3-hide-large">Borders</a>
+	  <a href="#" class="w3-bar-item w3-button w3-theme-d1 w3-hide-large">Imatges</a>
+	  <a href="#" class="w3-bar-item w3-button w3-theme-d2 w3-hide-large">Panells</a>
+	  <a href="#" class="w3-bar-item w3-button w3-theme-d3 w3-hide-large">Paddings</a>
+	  <a href="#" class="w3-bar-item w3-button w3-theme-d4 w3-hide-large">Efectes</a>
+	  <a href="#" class="w3-bar-item w3-button w3-theme-d3 w3-hide-large">Butons</a>
+	  <a href="#" class="w3-bar-item w3-button w3-theme-d2 w3-hide-large">LListes</a>
+	  <a href="#" class="w3-bar-item w3-button w3-theme-d1 w3-hide-large">Icones</a>
+	  <a href="#" class="w3-bar-item w3-button w3-theme-d2 w3-hide-large">Progress Bars</a>
+	  <a href="#" class="w3-bar-item w3-button w3-theme-d3 w3-hide-large">Notes</a>
+	  <a href="#" class="w3-bar-item w3-button w3-theme-d4 w3-hide-large">Display</a>
+	</div>
+</nav>
+
+<section>
+		<h2>Color</h2>
+
+		<h3>Containers</h3>
+
+		<p>Per donar un toc de color en els containers cal utilitzar la classe w3-container i w3-<i>color</i> on diu color em de escollir entre la llista dels que ens permet</p>
+		<p class="w3-container w3-green">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+		<p>Aques es un altre exemple de l'us d'aquesta classe, pero que passa si el que volem es que la lletra digui de color?</p>
+		<p class="w3-container w3-red">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+		
+		<h3>Text</h3>
+
+		<p>Per canviar el color de la lletra tenim les classes w3-text-<i>color</i></p>
+		<p class="w3-text-orange ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation </p>
+		<p class="w3-container w3-hover-text-purple w3-white">ullamco.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco.</p>
+
+		<h3>Botons</h3>
+		<button class="w3-red">lorem</button>
+		<button class="w3-border-blue">lorem</button>
+		<button class="w3-border-blue w3-red">lorem</button>
+		<h3>Borders</h3>
+
+		<h3>Taulas</h3>
+
+		<h3>Cards</h3>
+
+</section>
+
+<footer>
+		<a class="w3-hide-small w3-hide-medium w3-bar-item" style="color: white;">Powered By: Eduard Serra, Sergi Perelló and Guillem Soler</a>
+</footer>
+
+<script>
+	closeSidebar();
+	function openSidebar() {
+ 	 document.getElementById("mySidebar").style.display = "block";
+	}
+	function closeSidebar() {
+ 		document.getElementById("mySidebar").style.display = "none";
+	}
+</script>
+</body>
+</html>
